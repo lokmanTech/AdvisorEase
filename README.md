@@ -19,3 +19,6 @@ Contributions are welcome! If you'd like to contribute to the development of Adv
 5. Open a Pull Request
 
 Please ensure that your contributions adhere to the coding standards and guidelines of the project.
+
+## License
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this code for any purpose.
