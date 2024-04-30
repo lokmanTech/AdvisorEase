@@ -8,6 +8,10 @@ To use AdvisorEase frontend code, follow these steps:
 2. **Navigate to the Directory**: Change your current directory to the cloned repository folder:
 3. **Open the Frontend Code**: You can now explore and modify the frontend code of the AdvisorEase website using your preferred code editor.
 
+or 
+
+- Just download the zip files, but don't forget to follow me!
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to the development of AdvisorEase, please follow these steps:
