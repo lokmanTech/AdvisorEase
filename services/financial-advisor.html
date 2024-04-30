@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Remove Banner Strip at 000Webhost-->
+  <script src="../js/removeBanner.js"></script>
+
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Financial Analysis by Lokman Hakim</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Blog Stylesheet File -->
+  <link href="../css/blog.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="../css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicon.png">
+
+  <!-- =======================================================
+    Website Name: Lokman Hakim Group
+    Website URL: https://lokmanhakim.tech
+    Author: Lokman Hakim
+  ======================================================= -->
+</head>
+
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="../index.html#header" class="smoothScroll">Home</a></li>
+          <li><a href="../index.html#portfolio" class="smoothScroll">Services</a></li>
+          <li><a href="../index.html#about" class="smoothScroll">About</a></li>
+          <li><a href="../index.html#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+  <!-- start section main content -->
+  <div class="padDiv"></div>
+
+  <h2 class="mb1-30">Financial Analysis Solution</h2>
+  <p class="mb1-30">Planning Your Financial For Secured Future</p>
+
+  <div class="oontainer-analysis">
+    <div class="column-analysis">
+      <h5 class="mb1-30">How much is your monthly <b>Gross Income</b>?</h5>
+      <h5 class="mb1-30">RM <input class="services-block" type="number" id="monthlyIncome"
+          oninput="calculateYearlyIncome()"></h5>
+      <h3 class="mb1-30">your yearly income is <b class="blue-text">RM</b> <b id="yearlyIncome"
+          class="blue-text">0.00</b>
+      </h3>
+      <p class="mb1-30">For emergency savings, it ranges between 3-6 months from your monthly income</p>
+      <h5 class="mb1-30">You need at least <i class="blue-text">RM</i> <i id="minSavings" class="blue-text">0.00</i>, It
+        will be the best if you have <i class="blue-text">RM</i> <i id="maxSavings" class="blue-text">0.00</i> for your
+        emergency fund</h5>
+      <h5 class="mb1-30">How much is you current <b>debt commitment</b>?</h5>
+      <h5 class="mb1-30">RM <input type="number" id="debtAmount" oninput="calculateDebt()"></h5>
+      <h3 class="mb1-30">Thus, you will need to have at least <b class="blue-text">RM</b> <span id="debtReplacement"
+          class="blue-text">0.00</span> to cover back your debt amount.</h3>
+      <h5 class="mb1-30">Are you aware with any of these plan of investment?</h5>
+      <p class="mb1-30"><input type="checkbox" id="investmentAwareness"> ASB</p>
+      <p class="mb1-30"><input type="checkbox" id="investmentAwareness"> Fixed Deposit</p>
+      <p class="mb1-30"><input type="checkbox" id="investmentAwareness"> Tabung Haji</p>
+      <p class="mb1-30"><input type="checkbox" id="investmentAwareness"> Gold</p>
+      <p class="mb1-30"><input type="checkbox" id="investmentAwareness"> Unit Trust</p>
+      <h5 class="mb1-30">What is your current protection</h5>
+      <p class="mb1-30"><input type="checkbox" id="medicalCard"> Medical Card</p>
+      <p class="mb1-30"><input type="checkbox" id="criticalIllness"> Critical Illness</p>
+      <p class="mb1-30"><input type="checkbox" id="hibah"> Hibah</p>
+      <p class="mb1-30"><input type="checkbox" id="accidentalCoverage"> Accidental Coverage</p>
+      <h5 class="mb1-30">Proposed Plan: Based on the information provided:</h5>
+      <h3 class="mb1-30">Debt Replacement (Hibah): <b class="blue-text">RM</b> <b id="proposedHibah"
+          class="blue-text">0.00</b></h3>
+      <h5 class="mb1-30">Income Replacement for Critical Illness:</h5>
+      <h3 class="mb1-30">If single: <b class="blue-text">RM</b> <b id="singleIncomeReplacement"
+          class="blue-text">0.00</b>
+      </h3>
+      <h3 class="mb1-30">If married: <b class="blue-text">RM</b> <b id="marriedIncomeReplacement"
+          class="blue-text">0.00</b></h3>
+    </div>
+  </div>
+
+
+
+  <div id="button" class="text-center"><a href="../services/medical-card-planning.html"><i
+        class="ion-ios-medkit-outline"> Medical Card Plan</i></a></li>
+  </div>
+  <div id="button" class="text-center"><a href="../services/hibah-planning.html"><i class="ion-social-bitcoin-outline">
+        Hibah Plan</i></a></li>
+  </div>
+  <div id="button" class="text-center"><a href="../services/saving-protection-planning.html"><i class="ion-unlocked">
+        Secure Saving Plan</i></a></li>
+  </div>
+  <div id="button" class="text-center"> <a href="../services/real-estate-advisor.html"><i class="ion-android-home"> Real
+        Estate Investment</i></a></div>
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+
+      <div class="socials-media text-center">
+        <div class="socials-media text-center">
+          <h2 class="mb-30"><a href="https://wa.me/60102115249" target="_blank">GET IN TOUCH</a></h2>
+        </div>
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.linkedin.com/in/lhakimnazri/" target="_blank"><i class="ion-social-linkedin"></i></a>
+          </li>
+          <li><a href="https://www.instagram.com/financiallokman" target="_blank"><i
+                class="ion-social-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/financiallokman" target="_blank"><i class="ion-social-facebook"></i></a>
+          </li>
+          <li><a href="https://www.youtube.com/channel/UC7FIAUHGzXZ18oJb4J3kJFQ" target="_blank"><i
+                class="ion-social-youtube"></i></a></li>
+          <li><a href="https://www.propertyguru.com.my/property-agents/lokman-hakim-14171191" target="_blank"><i
+                class="ion-android-home"></i></a></li>
+        </ul>
+      </div>
+
+      <p>&copy; Copyrights Lokman Hakim. All rights reserved.</p>
+
+      <div class="credits">
+        Designed by <a href="mailto:lokmannazri.ag@gmail.com" target="_blank">Lokman Hakim</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/typed/typed.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+  </body>
+
+</html>
