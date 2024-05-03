@@ -894,3 +894,10 @@ nav ul li a {
 .hidden {
   display: none;
 }
+
+/* Checkbox Style */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+}
